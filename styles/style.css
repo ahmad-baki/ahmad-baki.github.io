@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.story {
+  font-family: "Dancing Script", cursive;
+}
+.story p {
+  font-size: 2rem;
+}
+
+.even_text_block {
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 20vw 30px 20vw;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #FFD60A;
+}
+.even_text_block p, .even_text_block h1, .even_text_block h2, .even_text_block del, .even_text_block b, .even_text_block br, .even_text_block li, .even_text_block a, .even_text_block img {
+  color: #023047;
+  z-index: 1;
+}
+.even_text_block p::-moz-selection, .even_text_block h1::-moz-selection, .even_text_block h2::-moz-selection, .even_text_block del::-moz-selection, .even_text_block b::-moz-selection, .even_text_block br::-moz-selection, .even_text_block li::-moz-selection, .even_text_block a::-moz-selection, .even_text_block img::-moz-selection {
+  color: #FFD60A;
+  background: #023047;
+}
+.even_text_block p::selection, .even_text_block h1::selection, .even_text_block h2::selection, .even_text_block del::selection, .even_text_block b::selection, .even_text_block br::selection, .even_text_block li::selection, .even_text_block a::selection, .even_text_block img::selection {
+  color: #FFD60A;
+  background: #023047;
+}
+
+.uneven_text_block {
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 20vw 30px 20vw;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #003566;
+}
+.uneven_text_block p, .uneven_text_block h1, .uneven_text_block h2, .uneven_text_block del, .uneven_text_block b, .uneven_text_block br, .uneven_text_block li, .uneven_text_block a, .uneven_text_block img {
+  color: #FFC300;
+  z-index: 1;
+}
+.uneven_text_block p::-moz-selection, .uneven_text_block h1::-moz-selection, .uneven_text_block h2::-moz-selection, .uneven_text_block del::-moz-selection, .uneven_text_block b::-moz-selection, .uneven_text_block br::-moz-selection, .uneven_text_block li::-moz-selection, .uneven_text_block a::-moz-selection, .uneven_text_block img::-moz-selection {
+  color: #003566;
+  background: #FFC300;
+}
+.uneven_text_block p::selection, .uneven_text_block h1::selection, .uneven_text_block h2::selection, .uneven_text_block del::selection, .uneven_text_block b::selection, .uneven_text_block br::selection, .uneven_text_block li::selection, .uneven_text_block a::selection, .uneven_text_block img::selection {
+  color: #003566;
+  background: #FFC300;
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #003566;
+}
+.review .name {
+  text-align: center;
+}
+.review .img_container {
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 1px solid #003566;
+  padding: -7px;
+  overflow: hidden;
+}
+.review .img_container img {
+  height: 100px;
+  width: 100px;
+}
+
+#executive {
+  margin-left: auto;
+}/*# sourceMappingURL=style.css.map */
