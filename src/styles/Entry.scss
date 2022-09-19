@@ -1,0 +1,102 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+
+  button{
+    margin: 0 .1em 0 .1em;
+    width: 2em;
+  }
+}
+.editorWrapper {
+  // text-align: center;
+
+  .titleText{
+    input {
+      background-color: transparent;
+      box-shadow: none;
+      font-size: x-large;
+      padding: 1em;
+      width: calc(100% - 2em);
+      margin-bottom: 2em;
+      border: rgba(255, 255, 255, 0.475) solid 1px;
+      color: rgba(255, 255, 255, 0.475);
+      border-radius: 1em;
+
+      &:focus{
+        background-color: rgba(228, 228, 228, 0.05);
+        color: white;
+      }
+    }
+  }
+
+  margin: 1em auto 0 auto;
+  width: 60%;
+  padding: 1em;
+  // background-color: green;
+  border-radius: 1em;
+  
+  .saveButton {
+    display: flex;
+    justify-content: right;
+
+    button {      
+        // margin-left: auto;
+        width: 100px;
+        position: relative;
+        background-color: white;
+        transition: background .2s ease-in-out;
+
+        &:hover{
+            background-color: #232629;
+            cursor: pointer;
+        }
+
+        p {
+          text-align: center;
+          display: block;
+            text-decoration: none;
+            color: black;
+            transition: color .1s ease-in-out;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: white solid 2px;
+                transition: top, left, right, bottom .1s ease-in-out, border .15s ease-in-out;
+            }
+
+            &:hover{
+                color: white;
+
+                &::before{
+                    border: #ff5857 solid 2px;
+                    top: -4px;
+                    left: -4px;
+                    right: -4px;
+                    bottom: -4px;
+                }
+            }
+        }   
+    }
+  }
+
+  .editor{
+    color: rgba(255, 255, 255, 0.475);
+    font-size: x-large;
+    padding: 1em;
+    margin-top: 1em;
+    min-height: 512px;
+    background-color: rgba(228, 228, 228, 0.05);
+    border: rgba(255, 255, 255, 0.475) solid 1px;
+    border-radius: 1em;
+  }  
+  
+  .editorFocus{
+    color: white;
+    border: white solid 1px;
+  }
+}

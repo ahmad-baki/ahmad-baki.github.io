@@ -1,0 +1,73 @@
+.homeEntriesContainer {
+  margin: 0em auto;
+  min-height: 100%;
+  max-width: 50em;
+  min-width: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+.homeEntriesContainer .CreateButton {
+  margin-left: auto;
+  width: 100px;
+  position: relative;
+  margin-bottom: 1em;
+  background-color: white;
+  transition: background 0.2s ease-in-out;
+}
+.homeEntriesContainer .CreateButton:hover {
+  background-color: #232629;
+}
+.homeEntriesContainer .CreateButton a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+.homeEntriesContainer .CreateButton a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: white solid 2px;
+  transition: top, left, right, bottom 0.1s ease-in-out, border 0.15s ease-in-out;
+}
+.homeEntriesContainer .CreateButton a p {
+  text-align: center;
+  display: block;
+}
+.homeEntriesContainer .CreateButton a:hover {
+  color: white;
+}
+.homeEntriesContainer .CreateButton a:hover::before {
+  border: #ff5857 solid 2px;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+}
+.homeEntriesContainer .homeEntryContainer {
+  width: 100%;
+  transition: background 0.5s ease-in, color 0.2s ease-in-out;
+}
+.homeEntriesContainer .homeEntryContainer:hover {
+  background: #ff5857;
+}
+.homeEntriesContainer .homeEntryContainer a {
+  color: inherit;
+  padding: 1em;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.homeEntriesContainer .homeEntryContainer a p, .homeEntriesContainer .homeEntryContainer a h1 {
+  display: inline;
+  margin: 0;
+}
+.homeEntriesContainer .homeEntryContainer a p {
+  margin-left: auto;
+  font-weight: lighter;
+  opacity: 0.5;
+}/*# sourceMappingURL=Home.css.map */
